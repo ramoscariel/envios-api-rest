@@ -16,6 +16,13 @@ namespace EnviosApiRest.Controllers
         }
 
         [HttpGet]
+        [Route("health")]
+        public async Task<IActionResult> Health()
+        {
+            return Ok("Hola Mundo!");
+        }
+
+        [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             var envios = await envioRepository.GetAllAsync();
