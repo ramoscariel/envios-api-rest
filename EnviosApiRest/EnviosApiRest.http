@@ -1,0 +1,6 @@
+@EnviosApiRest_HostAddress = http://localhost:5115
+
+GET {{EnviosApiRest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
